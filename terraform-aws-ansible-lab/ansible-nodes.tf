@@ -1,6 +1,6 @@
 ## ================================ Ansible Node Instances ================================
 resource "aws_instance" "ansible-nodes" {
-  ami             = var.aws_ami_id #"ami-0cd31be676780afa7"
+  ami             = "ami-0341aeea105412b57"
   instance_type   = "t2.micro"
   key_name        = aws_key_pair.ec2loginkey.key_name
   count           = var.ansible_node_count
